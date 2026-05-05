@@ -6,7 +6,11 @@
   "plugins": [
     {
       "name": "gateway-ai",
-      "source": "./plugins/gateway-ai",
+      "source": {
+        "source": "git-subdir",
+        "url": "imgly/gateway-ai-skills",
+        "path": "plugins/gateway-ai"
+      },
       "description": "Skills for integrating clients with the IMG.LY AI Gateway."
     }
   ]
