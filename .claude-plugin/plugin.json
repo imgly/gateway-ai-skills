@@ -1,6 +1,5 @@
 {
   "name": "gateway-ai",
-  "version": "0.1.0",
   "description": "Skills for integrating clients with the IMG.LY AI Gateway — model discovery, schema-driven inputs, and SSE-based generation.",
   "author": {
     "name": "IMG.LY"
