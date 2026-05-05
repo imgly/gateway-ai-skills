@@ -6,7 +6,7 @@
   "plugins": [
     {
       "name": "gateway-ai",
-      "source": ".",
+      "source": "./plugins/gateway-ai",
       "description": "Skills for integrating clients with the IMG.LY AI Gateway."
     }
   ]
