@@ -24,10 +24,12 @@ That's it. Ask Claude something like *"Help me call the IMG.LY Gateway from my N
 
 - Auth methods (API key, gateway JWT) and when to use each
 - Discovering models (`GET /v1/models`) and reading per-model input schemas (`GET /v1/models/schema`)
-- Generating content via `POST /v1/responses` and consuming the SSE stream (`generation.status`, `generation.delta`, `generation.completed`, `generation.failed`)
+- Generating content via `POST /v1/responses` and consuming the SSE stream (`generation.status`, `generation.delta`, `generation.completed`, `generation.failed`, `generation.detached`)
+- Long-running generations: reading state and result by request id (`GET /v1/responses/:id`) after a dropped connection, and running without a stream (`Prefer: respond-async`)
+- Provider passthrough (`@<provider>/<native id>` with `provider_input`)
 - Uploading input images (`POST /v1/uploads`) for image-to-image and image-to-video workflows
 - Schema-driven UI generation using IMG.LY's OpenAPI extensions (`x-imgly-builder`, `x-imgly-enum-labels`, etc.)
-- Common gotchas (SSE parsing, token expiry, structured error handling)
+- Common gotchas (SSE parsing, token expiry, structured error handling, a closed stream not cancelling a job)
 
 ## What it does NOT cover
 

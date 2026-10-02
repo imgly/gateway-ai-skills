@@ -53,7 +53,7 @@ For server-side rendering or server actions, retrieve the token from the Clerk s
 
 ## What's the same as the standard integration
 
-Everything else: endpoints, request shapes, SSE event names, error codes, schema-driven inputs, model discovery, asset upload flow.
+Everything else: endpoints, request shapes, SSE event names, error codes, schema-driven inputs, model discovery, asset upload flow, and picking a long-running generation up again by its `request_id` (`GET /v1/responses/<request_id>`, with the same session JWT).
 
 For all of those, **fetch the live reference**:
 
